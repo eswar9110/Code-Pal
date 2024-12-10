@@ -510,10 +510,10 @@ html{
     padding-top: 25%;
     width: 100%;
     display: flex;
-    display: -webkit-flex;
+    
     justify-content: center;
-    -webkit-justify-content: center;
-    max-width: 820px;
+    
+    /* max-width: 820px; */
   }
   
   .card--1 .card__img,
@@ -611,7 +611,8 @@ html{
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
     width: 33.3%;
-    margin: 3.5rem;
+    margin: 5px;
+    /* padding-left: 10px; */
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -1517,3 +1518,16 @@ html{
   .al{
     background-color: #000;
   }
+  .heading-section123{
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px;
+    font-size: 55px;
+    font-weight: 600;
+    color:#ffffff;
+  }
+  .bg-color-s{
+    background-color: black;
+    width: 100vw;
+    height: 20vh;
+  }
+  
