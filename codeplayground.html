@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Practice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="codeplay.css">
+</head>
+
+<body>
+  <header>
+    <h1>Code Practice Hub</h1>
+    <p>Practice coding in your favorite language!</p>
+  </header>
+  <nav>
+    <ul id="language-list">
+      <!-- Languages will be added dynamically -->
+    </ul>
+  </nav>
+  <main>
+    <div id="editor-container">
+      <textarea id="code-editor"></textarea>
+      <button id="run-code">Run Code</button>
+    </div>
+    <pre id="output"></pre>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="subscription">
+        <h3 class="animated-text">Stay Updated!</h3>
+        <p>Subscribe for the latest news and updates.</p>
+        <div class="subscription-form">
+          <input type="email" placeholder="Enter your email" id="email" />
+          <button onclick="subscribe()">Subscribe</button>
+        </div>
+        <label>
+          <input type="checkbox" id="age-confirmation" />
+          I confirm I am at least 18 years old.
+        </label>
+      </div>
+      <div class="links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Consumer Care</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Languagues</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h4>Follow Us</h4>
+        <a href="https://www.youtube.com/@INGNOBITAGAMING"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/eswar9110"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/eswar_9110/profilecard/?igsh=MW5maTFhc3dsNjB0dQ=="><i
+            class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a
+          href="https://www.linkedin.com/in/eswar-narayana-khande-56802a313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i
+            class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="region-selector">
+        <h4>Region</h4>
+        <select>
+          <option>Select Region</option>
+          <option>USA</option>
+          <option>Europe</option>
+          <option>Asia</option>
+        </select>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 CODE PAL. All Rights Reserved.</p>
+      <div class="policies">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+  <script src="codeplay.js"></script>
+</body>
+
+</html>

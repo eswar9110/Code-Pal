@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE - PAL Voice-Enabled Chatbot</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+    <div class="chatbot animated-chatbot">
+        <div class="header">
+            <h2>Code Helper</h2>
+        </div>
+        
+        <div class="chat-window">
+            <div class="messages" id="messages"></div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message or use the mic...">
+            <button id="micButton" class="btn-animated"><i class="fas fa-microphone"></i></button>
+            <button id="sendButton" class="btn-animated"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+</body>
+<script src="chat.js"></script>
+</html>

@@ -1,0 +1,265 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: grey;
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.link-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-out;
+}
+
+.link-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover img {
+    transform: scale(1.1);
+}
+
+.link-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.link-card h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #99f2c8;
+}
+
+.link-card p {
+    margin: 15px 0;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.link-card a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-card a:hover {
+    color: #81c784;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.footer {
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+    padding: 30px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.subscription,
+.links,
+.social-media,
+.region-selector {
+    flex: 1 1 23%;
+}
+
+.subscription h3,
+.links h4,
+.social-media h4,
+.region-selector h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0a500;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-out;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.subscription-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #f0a500;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+    outline: none;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscription-form button:hover {
+    background-color: #ffcc00;
+}
+
+.links ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.links ul li {
+    margin: 5px 0;
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links ul li a:hover {
+    color: #f0a500;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f0a500;
+    transform: scale(1.2);
+}
+
+.region-selector select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f0a500;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.footer-bottom .policies a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom .policies a:hover {
+    color: #f0a500;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
