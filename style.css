@@ -870,7 +870,7 @@ html{
   .App-logo5 {
     pointer-events: none;
     width: 120px;
-    margin-bottom:-36px;
+/*     margin-bottom:-36px; */
     margin-top: 90px;
   }
   
