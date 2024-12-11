@@ -13,6 +13,23 @@
     font-weight: 400;
 }
 
+.nav {
+    background-color: rgb(62, 58, 58);
+}
+
+.logo {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
+
+.shine {
+    font-weight: bold;
+    font-family: Kanit;
+    margin-left: 42%;
+    color: white;
+}
 
 /* From Uiverse.io by akshat-patel28 */
 .card {
