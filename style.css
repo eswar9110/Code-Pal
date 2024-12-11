@@ -1244,210 +1244,160 @@ html{
   /* footer */
   
   .footer {
-    background-color: #001933;
+    background-color: #000;
     color: #fff;
-    padding: 70px 70px;
+    padding: 30px 20px;
     font-family: 'Poppins', sans-serif;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     animation: fadeIn 2s ease-in-out;
-  }
-  
-  .subscription,
-  .links,
-  .social-media,
-  .region-selector {
+}
+
+.subscription,
+.links,
+.social-media,
+.region-selector {
     flex: 1 1 23%;
-  }
-  
-  .subscription h3,
-  .links h4,
-  .social-media h4,
-  .region-selector h4 {
+}
+
+.subscription h3,
+.links h4,
+.social-media h4,
+.region-selector h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #f0a500;
     text-transform: uppercase;
     animation: slideIn 1s ease-out;
-  }
-  
-  .subscription-form {
+}
+
+.subscription-form {
     display: flex;
     gap: 10px;
     margin: 15px 0;
-  }
-  
-  .subscription-form input {
+}
+
+.subscription-form input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #f0a500;
     border-radius: 5px;
-    background-color: #001d33;
+    background-color: #111;
     color: #fff;
     outline: none;
-  }
-  
-  .subscription-form button {
+}
+
+.subscription-form button {
     padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #f0a500;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-  }
-  
-  .subscription-form button:hover {
-    background-color: #000000;
-  }
-  
-  .links ul {
+}
+
+.subscription-form button:hover {
+    background-color: #ffcc00;
+}
+
+.links ul {
     margin: 0;
     padding-left: 20px;
-  }
-  
-  .links ul li {
+}
+
+.links ul li {
     margin: 5px 0;
-  }
-  
-  .links ul li a {
+}
+
+.links ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
-  }
-  
-  .links ul li a:hover {
-    color: #00ff95;
-  }
-  
-  .social-media a {
+}
+
+.links ul li a:hover {
+    color: #f0a500;
+}
+
+.social-media a {
     color: #fff;
     font-size: 20px;
     margin-right: 10px;
     transition: transform 0.3s, color 0.3s;
-  }
-  
-  .social-media a:hover {
-    color: #00ff95;
+}
+
+.social-media a:hover {
+    color: #f0a500;
     transform: scale(1.2);
-  }
-  
-  .region-selector select {
+}
+
+.region-selector select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #f0a500;
     background-color: #111;
     color: #fff;
     border-radius: 5px;
     outline: none;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     margin-top: 20px;
     text-align: center;
     font-size: 12px;
     animation: fadeInUp 1.5s ease-in-out;
-  }
-  
-  .footer-bottom .policies a {
+}
+
+.footer-bottom .policies a {
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
-  }
-  
-  .footer-bottom .policies a:hover {
-    color: #000000;
-  }
-  
-  @keyframes fadeIn {
+}
+
+.footer-bottom .policies a:hover {
+    color: #f0a500;
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     from {
-      transform: translateY(20px);
-      opacity: 0;
+        transform: translateY(20px);
+        opacity: 0;
     }
+
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  @keyframes fadeInUp {
+}
+
+@keyframes fadeInUp {
     from {
-      transform: translateY(50px);
-      opacity: 0;
+        transform: translateY(50px);
+        opacity: 0;
     }
+
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
   /* ijiwswox */
-  .chatbot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  .chatbot-toggle {
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  .chatbot-window {
-    display: none;
-    width: 300px;
-    background: white;
-    border: 1px solid #ccc;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-  .chat-header {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  .chat-messages {
-    height: 300px;
-    overflow-y: auto;
-    padding: 10px;
-    font-size: 14px;
-  }
-  #userInput {
-    width: 80%;
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    background: #f1f1f1;
-  }
-  #sendMessage {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
 
 
 
@@ -1456,56 +1406,7 @@ html{
 
 
 
-
-  .chat {
-    align-items: center;
-    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-    border: 0;
-    border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: flex;
-    font-size: 18px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all 0.3s;
-    display: sitcky;
-    position: fixed
-  }
   
-  .chat:active,
-  .chat:hover {
-    outline: 0;
-  }
-  
-  .chat span {
-    background-color: rgb(5, 6, 45);
-    padding: 16px 24px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    transition: 300ms;
-  }
-  
-  .chat:hover span {
-    background: none;
-  }
-  
-  .chat:active {
-    transform: scale(0.9);
-  }
-  
-
   .pop{
     background-color: #000;
   }
